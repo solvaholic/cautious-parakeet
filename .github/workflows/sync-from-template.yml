@@ -13,6 +13,8 @@ name: Sync changes from template
 # - Switch to gh. Check https://github.com/cli/cli/issues/297 for updates.
 
 on:
+  workflow_dispatch:
+    # Run when manually triggered.
   schedule:
     # Run at 0517 UTC each Friday.
     - cron: "17 5 * * 5"
